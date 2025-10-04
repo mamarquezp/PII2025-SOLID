@@ -29,7 +29,7 @@ namespace PII2025_SOLID.SOLID_Services
 			var total = calculator.GetTotalSales(day);
 			var content = formatter.FormatReport(day, total);
 			writer.Write(day.ToString("yyyyMMdd"), content);
-			sender.Send("noreply@miempresa.com", "gerencia@miempresa.com", "Reporte de ventas", content);
+			sender.Send("+502 12345678", "+502 87654321", "Reporte de ventas", content);
 		}
 	}
 }
